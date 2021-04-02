@@ -1,6 +1,13 @@
 <template>
   <div id="counter">
-    <h1>Counter</h1>
+    <main id="counter-content">
+      <h1>Counter: 0</h1>
+
+      <div class="buttons">
+        <button>Increment</button>
+        <button>Decrement</button>
+      </div>
+    </main>
   </div>
 </template>
 
@@ -8,4 +15,4 @@
 export default {};
 </script>
 
-<style></style>
+<style lang="scss" src="./styles.scss"></style>
