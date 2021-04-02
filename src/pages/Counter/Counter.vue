@@ -1,18 +1,32 @@
 <template>
   <div id="counter">
     <main id="counter-content">
-      <h1>Counter: 0</h1>
+      <h1>Counter: {{ counter }}</h1>
 
       <div class="buttons">
-        <button>Increment</button>
-        <button>Decrement</button>
+        <button @click="increment">Increment</button>
+        <button @click="decrement">Decrement</button>
       </div>
     </main>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    counter: 0
+  }),
+
+  methods: {
+    increment() {
+      this.counter++;
+    },
+
+    decrement() {
+      this.counter--;
+    }
+  }
+};
 </script>
 
 <style lang="scss" src="./styles.scss"></style>

@@ -1,6 +1,6 @@
 <template>
   <div id="initial">
-    <h1>Teste Initial</h1>
+    <h1>Exemplos de testes Vue.js</h1>
     <RouterLink to="/counter">Exemplo COUNTER</RouterLink>
   </div>
 </template>

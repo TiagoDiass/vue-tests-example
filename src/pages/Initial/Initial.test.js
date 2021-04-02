@@ -6,7 +6,7 @@ describe('Initial Component', () => {
     render(Initial, { stubs: ['RouterLink'] });
 
     expect(
-      screen.getByRole('heading', { name: /teste initial/i })
+      screen.getByRole('heading', { name: /exemplos de testes vue\.js/i })
     ).toBeInTheDocument();
     expect(screen.getByText(/counter/i)).toBeInTheDocument();
   });
